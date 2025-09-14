@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogX - 个人博客平台</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">BlogX</h1>
+                <div class="header-controls">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="搜索文章..." class="search-input">
+                        <button id="search-btn" class="search-btn">🔍</button>
+                    </div>
+                    <button id="theme-toggle" class="theme-toggle">🌙</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <aside class="sidebar">
+                <h2>文章列表</h2>
+                <div id="article-list" class="article-list"></div>
+            </aside>
+
+            <section class="article-content">
+                <div id="article-display" class="article-display">
+                    <div class="welcome-message">
+                        <h2>欢迎来到 BlogX</h2>
+                        <p>选择一个文章开始阅读，或使用搜索功能查找内容。</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
